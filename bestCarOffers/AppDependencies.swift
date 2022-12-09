@@ -27,11 +27,14 @@ class AppDependencies {
         let listDataManager = ListDataManager()
         let listInteractor = ListInteractor(dataManager: listDataManager)
         
+        let detailsWireframe = DetailsWireframe()
+        
         listInteractor.output = listPresenter
         
         listPresenter.listInteractor = listInteractor
         listPresenter.listWireframe = listWireframe
         
+        listWireframe.detailsWireframe = detailsWireframe
         listWireframe.listPresenter = listPresenter
         listWireframe.rootWireframe = rootWireframe
         

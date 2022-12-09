@@ -89,7 +89,7 @@
         <!--Details-->
         <scene sceneID="otn-a6-erg">
             <objects>
-                <viewController title="Details" id="Yk9-DQ-57n" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailsViewController" title="Details" id="Yk9-DQ-57n" customClass="DetailsViewController" customModule="bestCarOffers" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="G2X-Tw-XQJ"/>
                         <viewControllerLayoutGuide type="bottom" id="DEn-b4-Ceb"/>
