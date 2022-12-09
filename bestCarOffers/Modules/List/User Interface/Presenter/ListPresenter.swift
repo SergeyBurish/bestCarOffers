@@ -39,4 +39,8 @@ class ListPresenter : ListInteractorOutput, ListModuleInterface {
     func updateView() {
         listInteractor?.findUpcomingItems()
     }
+    
+    func handleItemSelected(_ index: Int) {
+        print(index)
+    }
 }
