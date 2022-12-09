@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ListInteractor : NSObject, ListInteractorInput {
+class ListInteractor : ListInteractorInput {
     var output : ListInteractorOutput?
     
     let dataManager : ListDataManager

@@ -11,7 +11,7 @@ import UIKit
 
 let ListViewControllerIdentifier = "ListViewController"
 
-class ListWireframe : NSObject {
+class ListWireframe {
     var listPresenter : ListPresenter?
     var rootWireframe : RootWireframe?
     var listViewController : ListViewController?
