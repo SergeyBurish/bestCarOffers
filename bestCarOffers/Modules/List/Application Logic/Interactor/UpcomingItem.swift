@@ -8,13 +8,15 @@
 import Foundation
 
 struct UpcomingItem : Equatable {
+    let img : String
     let title : String
     
-    init(title: String) {
+    init(img: String, title: String) {
+        self.img = img
         self.title = title
     }
 }
 
 func == (a: UpcomingItem, b: UpcomingItem) -> Bool {
-    return a.title == b.title
+    return a.img == b.img && a.title == b.title
 }

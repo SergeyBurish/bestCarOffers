@@ -33,7 +33,9 @@ class ListInteractor : ListInteractorInput {
     
     func upcomingItemsFromCarItems(_ carItems: [CarItem]) -> [UpcomingItem] {
         let upcomingItems: [UpcomingItem] = carItems.map() { carItem in
-            return UpcomingItem(title: carItem.makeModel)
+            return UpcomingItem(
+                img: carItem.imgPrev,
+                title: carItem.makeModel)
         }
         return upcomingItems
     }

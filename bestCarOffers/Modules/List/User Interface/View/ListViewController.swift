@@ -64,7 +64,7 @@ class ListViewController : UITableViewController, ListViewInterface {
 
         cell.textLabel?.text = item?.title
         cell.detailTextLabel?.text = "---"
-        cell.imageView?.image = UIImage(named: "car")
+        cell.imageView?.image = UIImage(named: (item?.img)!)
         cell.selectionStyle = UITableViewCell.SelectionStyle.none;
 
         return cell

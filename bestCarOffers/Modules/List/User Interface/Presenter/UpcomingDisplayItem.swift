@@ -8,12 +8,13 @@
 import Foundation
 
 struct UpcomingDisplayItem {
+    let img : String
     let title : String
 }
 
 extension UpcomingDisplayItem : Equatable {
     static func == (a: UpcomingDisplayItem, b: UpcomingDisplayItem) -> Bool {
-        return a.title == b.title
+        return a.img == b.title && a.img == b.title
     }
 }
 

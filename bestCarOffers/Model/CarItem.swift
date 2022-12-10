@@ -8,5 +8,6 @@
 import Foundation
 
 struct CarItem: Decodable {
+    let imgPrev: String
     let makeModel: String
 }
