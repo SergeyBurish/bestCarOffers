@@ -13,10 +13,10 @@ class DetailsPresenter : DetailsModuleInterface, DetailsInteractorOutput {
     var userInterface : DetailsViewInterface?
     
     func updateView() {
-        detailsInteractor?.findUpcomingItem()
+        detailsInteractor?.findDetailsItem()
     }
     
-    func foundUpcomingItem(_ upcomingItem: UpcomingItem) {
-        userInterface?.showDisplayData(upcomingItem)
+    func foundDetailsItem(_ detailsItem: DetailsItem) {
+        userInterface?.showDisplayData(detailsItem)
     }
 }

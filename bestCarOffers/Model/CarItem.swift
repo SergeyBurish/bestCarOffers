@@ -9,7 +9,9 @@ import Foundation
 
 struct CarItem: Decodable {
     let imgPrev: String
+    let carImage: String
     let makeModel: String
     let state: String
     let price: Int
+    let mileage: Int
 }

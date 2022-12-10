@@ -8,5 +8,5 @@
 import Foundation
 
 protocol DetailsViewInterface {
-    func showDisplayData(_ item: UpcomingItem)
+    func showDisplayData(_ item: DetailsItem)
 }

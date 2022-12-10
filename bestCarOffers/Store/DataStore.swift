@@ -11,21 +11,28 @@ import Foundation
 let mockJSON = """
 [{
     "imgPrev": "AudiA8prev",
+    "carImage": "AudiA8",
     "makeModel": "Audi A8",
     "state": "used",
-    "price": 13500
+    "price": 13500,
+    "mileage": 172000
+
 },
 {
     "imgPrev": "BmwM2prev",
+    "carImage": "BmwM2",
     "makeModel": "BMW M2",
     "state": "used",
-    "price": 40000
+    "price": 40000,
+    "mileage": 540
 },
 {
     "imgPrev": "FordCMaxprev",
+    "carImage": "FordCMax",
     "makeModel": "Ford C-Max",
     "state": "new",
-    "price": 17000
+    "price": 17000,
+    "mileage": 0
 }]
 """
 

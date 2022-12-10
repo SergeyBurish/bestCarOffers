@@ -38,6 +38,7 @@
 		84204CA62943892800292C52 /* DetailsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84204CA52943892800292C52 /* DetailsDataManager.swift */; };
 		84204CAC2944674200292C52 /* DetailsModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84204CAB2944674200292C52 /* DetailsModuleInterface.swift */; };
 		84204CBA2944A24000292C52 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84204CB92944A24000292C52 /* ListCell.swift */; };
+		84204CBF2944B1D400292C52 /* DetailsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84204CBE2944B1D400292C52 /* DetailsItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		84204CA52943892800292C52 /* DetailsDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsDataManager.swift; sourceTree = "<group>"; };
 		84204CAB2944674200292C52 /* DetailsModuleInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsModuleInterface.swift; sourceTree = "<group>"; };
 		84204CB92944A24000292C52 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		84204CBE2944B1D400292C52 /* DetailsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -353,6 +355,7 @@
 			children = (
 				84204C9F294387A500292C52 /* DetailsInteractor.swift */,
 				84204C9A2943840D00292C52 /* DetailsInteractorIO.swift */,
+				84204CBE2944B1D400292C52 /* DetailsItem.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -518,6 +521,7 @@
 				84204CA0294387A500292C52 /* DetailsInteractor.swift in Sources */,
 				84204BC42941E6B000292C52 /* AppDelegate.swift in Sources */,
 				84204C8D2943812300292C52 /* DetailsViewInterface.swift in Sources */,
+				84204CBF2944B1D400292C52 /* DetailsItem.swift in Sources */,
 				84204CAC2944674200292C52 /* DetailsModuleInterface.swift in Sources */,
 				84204CA62943892800292C52 /* DetailsDataManager.swift in Sources */,
 				84204C282941EF0A00292C52 /* ListModuleInterface.swift in Sources */,

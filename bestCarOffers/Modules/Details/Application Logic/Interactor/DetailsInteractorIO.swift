@@ -8,9 +8,9 @@
 import Foundation
 
 protocol DetailsInteractorInput {
-    func findUpcomingItem()
+    func findDetailsItem()
 }
 
 protocol DetailsInteractorOutput {
-    func foundUpcomingItem(_ upcomingItem: UpcomingItem)
+    func foundDetailsItem(_ detailsItem: DetailsItem)
 }

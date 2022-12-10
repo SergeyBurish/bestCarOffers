@@ -12,14 +12,22 @@ import UIKit
 class DetailsViewController : UIViewController, DetailsViewInterface {
     var eventHandler : DetailsModuleInterface?
     
-    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var carImage: UIImageView!
+    @IBOutlet weak var carTitle: UILabel!
+    @IBOutlet weak var price: UILabel!
+    @IBOutlet weak var state: UILabel!
+    @IBOutlet weak var mileage: UILabel!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         eventHandler?.updateView()
     }
     
-    func showDisplayData(_ item: UpcomingItem) {
-        name.text = item.title
+    func showDisplayData(_ item: DetailsItem) {
+        carTitle.text = item.title
+        carImage.image = UIImage(named: (item.img))
+        state.text = item.state
+        mileage.text = String(item.mileage) + "km"
+        price.text = "$" + String(item.price)
     }
 }
