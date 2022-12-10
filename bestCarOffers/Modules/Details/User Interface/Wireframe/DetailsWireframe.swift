@@ -11,11 +11,12 @@ import UIKit
 let DetailsViewControllerIdentifier = "DetailsViewController"
 
 class DetailsWireframe {
-    //var detailsViewController : DetailsViewController?
+    var detailsPresenter : DetailsPresenter?
     
     func presentDetailsInterfaceFromViewController(_ viewController: UIViewController) {
         let newViewController = detailsViewControllerFromStoryboard()
-        //detailsViewController = newViewController
+        newViewController.eventHandler = detailsPresenter
+        detailsPresenter?.userInterface = newViewController
         viewController.navigationController?.pushViewController(newViewController, animated: true)
         
     }

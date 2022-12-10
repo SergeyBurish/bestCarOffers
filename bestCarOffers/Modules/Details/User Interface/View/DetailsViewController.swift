@@ -9,5 +9,17 @@ import Foundation
 import UIKit
 
 
-class DetailsViewController : UIViewController {    
+class DetailsViewController : UIViewController, DetailsViewInterface {
+    var eventHandler : DetailsModuleInterface?
+    
+    @IBOutlet weak var name: UILabel!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        eventHandler?.updateView()
+    }
+    
+    func showDisplayData(_ item: UpcomingItem) {
+        name.text = item.title
+    }
 }

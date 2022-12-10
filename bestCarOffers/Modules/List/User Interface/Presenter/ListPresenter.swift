@@ -41,7 +41,7 @@ class ListPresenter : ListInteractorOutput, ListModuleInterface {
     }
     
     func handleItemSelected(_ index: Int) {
-        print(index)
+        listInteractor?.handleSelected(index: index)
         listWireframe?.presentDetailsInterface()
     }
 }
