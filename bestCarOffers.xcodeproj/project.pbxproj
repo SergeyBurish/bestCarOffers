@@ -339,8 +339,8 @@
 		84204C98294383E700292C52 /* Application Logic */ = {
 			isa = PBXGroup;
 			children = (
-				84204CA4294388F500292C52 /* Manager */,
 				84204C99294383F800292C52 /* Interactor */,
+				84204CA4294388F500292C52 /* Manager */,
 			);
 			path = "Application Logic";
 			sourceTree = "<group>";

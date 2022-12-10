@@ -10,13 +10,13 @@ import Foundation
 
 let mockJSON = """
 [{
-    "name": "car01"
+    "makeModel": "Audi A8"
 },
 {
-    "name": "car02"
+    "makeModel": "BMW M2"
 },
 {
-    "name": "car03"
+    "makeModel": "Ford C-Max"
 }]
 """
 

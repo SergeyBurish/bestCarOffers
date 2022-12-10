@@ -19,7 +19,7 @@ class DetailsInteractor : DetailsInteractorInput {
     func findUpcomingItem() {
         dataManager.carItemMatching(
             completion: { carItem in
-                let upcomingItem = UpcomingItem(title: carItem.name)
+                let upcomingItem = UpcomingItem(title: carItem.makeModel)
                 self.output?.foundUpcomingItem(upcomingItem)
         })
     }

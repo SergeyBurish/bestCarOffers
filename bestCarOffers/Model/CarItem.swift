@@ -8,5 +8,5 @@
 import Foundation
 
 struct CarItem: Decodable {
-    let name : String
+    let makeModel: String
 }
