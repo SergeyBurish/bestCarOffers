@@ -42,6 +42,28 @@ let mockJSON = """
     "year": 2022,
     "owners": 0,
     "descr": "",
+},
+{
+    "imgPrev": "HondaCivicprev",
+    "carImage": "HondaCivic",
+    "makeModel": "Honda Civic",
+    "state": "used",
+    "price": 23000,
+    "mileage": 97000,
+    "year": 2017,
+    "owners": 1,
+    "descr": "restored after accident",
+},
+{
+    "imgPrev": "KiaRioprev",
+    "carImage": "KiaRio",
+    "makeModel": "Kia Rio",
+    "state": "new",
+    "price": 47000,
+    "mileage": 3,
+    "year": 2021,
+    "owners": 0,
+    "descr": "",
 }]
 """
 
