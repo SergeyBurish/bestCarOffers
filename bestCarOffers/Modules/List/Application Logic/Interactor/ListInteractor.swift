@@ -35,7 +35,8 @@ class ListInteractor : ListInteractorInput {
         let upcomingItems: [UpcomingItem] = carItems.map() { carItem in
             return UpcomingItem(
                 img: carItem.imgPrev,
-                title: carItem.makeModel)
+                title: carItem.makeModel,
+                price: carItem.price)
         }
         return upcomingItems
     }

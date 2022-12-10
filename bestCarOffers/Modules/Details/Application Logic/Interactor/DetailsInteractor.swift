@@ -19,7 +19,9 @@ class DetailsInteractor : DetailsInteractorInput {
     func findUpcomingItem() {
         dataManager.carItemMatching(
             completion: { carItem in
-                let upcomingItem = UpcomingItem(img: "", title: carItem.makeModel)
+                let upcomingItem = UpcomingItem(img: "",
+                                                title: carItem.makeModel,
+                                                price: carItem.price)
                 self.output?.foundUpcomingItem(upcomingItem)
         })
     }

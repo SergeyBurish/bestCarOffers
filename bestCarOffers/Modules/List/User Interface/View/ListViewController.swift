@@ -63,7 +63,7 @@ class ListViewController : UITableViewController, ListViewInterface {
         let item = dataProperty?.items[indexPath.row]
 
         cell.textLabel?.text = item?.title
-        cell.detailTextLabel?.text = "---"
+        cell.detailTextLabel?.text = item?.price
         cell.imageView?.image = UIImage(named: (item?.img)!)
         cell.selectionStyle = UITableViewCell.SelectionStyle.none;
 

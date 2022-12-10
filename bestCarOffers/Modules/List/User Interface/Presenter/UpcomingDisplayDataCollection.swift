@@ -19,7 +19,8 @@ class UpcomingDisplayDataCollection {
     func addUpcomingItem(_ upcomingItem: UpcomingItem) {
         let displayItem = UpcomingDisplayItem(
             img: upcomingItem.img,
-            title: upcomingItem.title)
+            title: upcomingItem.title,
+            price: "$" + String(upcomingItem.price))
         items.insert(displayItem, at: items.endIndex)
     }
     
