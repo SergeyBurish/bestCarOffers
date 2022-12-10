@@ -12,6 +12,7 @@ import UIKit
 let ListViewControllerIdentifier = "ListViewController"
 
 class ListWireframe {
+    var detailsWireframe : DetailsWireframe?
     var listPresenter : ListPresenter?
     var rootWireframe : RootWireframe?
     var listViewController : ListViewController?
@@ -22,6 +23,10 @@ class ListWireframe {
         listViewController = viewController
         listPresenter?.userInterface = viewController
         rootWireframe?.showRootViewController(viewController, inWindow: window)
+    }
+    
+    func presentDetailsInterface() {
+        detailsWireframe?.presentDetailsInterfaceFromViewController(listViewController!)
     }
     
     func listViewControllerFromStoryboard() -> ListViewController {

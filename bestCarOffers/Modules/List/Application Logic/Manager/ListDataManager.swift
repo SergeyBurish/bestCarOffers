@@ -12,9 +12,13 @@ class ListDataManager {
 
     func carItemsMatching(completion: (([CarItem]) -> Void)!) {
                 
-        dataStore?.fetchEntriesWithPredicate(
+        dataStore?.fetchAllEntries(
             completionBlock: { items in
                 completion(items)
         })
+    }
+    
+    func setSelected(index: Int) {
+        dataStore!.selectedIndex = index
     }
 }

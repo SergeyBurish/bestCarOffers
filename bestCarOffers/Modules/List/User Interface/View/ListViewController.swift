@@ -69,4 +69,8 @@ class ListViewController : UITableViewController, ListViewInterface {
 
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        eventHandler?.handleItemSelected(indexPath.row)
+    }
 }

@@ -23,13 +23,22 @@ let mockJSON = """
 
 class DataStore {
     var carItems: [CarItem] = []
+    var selectedIndex = -1
     
     init() {
         let jsonData = mockJSON.data(using: .utf8)!
         carItems = try! JSONDecoder().decode([CarItem].self, from: jsonData)
     }
     
-    func fetchEntriesWithPredicate(completionBlock: (([CarItem]) -> Void)!) {
+    func fetchAllEntries(completionBlock: (([CarItem]) -> Void)!) {
+        // async request
         completionBlock(self.carItems)
+    }
+    
+    func fetchSelectedEntry(completionBlock: ((CarItem) -> Void)!) {
+        if (selectedIndex < 0) {return}
+        
+        // async request
+        completionBlock(self.carItems[selectedIndex])
     }
 }

@@ -27,6 +27,10 @@ class ListInteractor : ListInteractorInput {
         })
     }
     
+    func handleSelected(index: Int) {
+        dataManager.setSelected(index: index)
+    }
+    
     func upcomingItemsFromCarItems(_ carItems: [CarItem]) -> [UpcomingItem] {
         let upcomingItems: [UpcomingItem] = carItems.map() { carItem in
             return UpcomingItem(title: carItem.name)

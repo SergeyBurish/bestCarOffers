@@ -9,4 +9,5 @@ import Foundation
 
 protocol ListModuleInterface {
     func updateView()
+    func handleItemSelected(_ index: Int)
 }
