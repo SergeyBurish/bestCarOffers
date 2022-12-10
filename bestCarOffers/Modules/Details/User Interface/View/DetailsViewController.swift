@@ -17,6 +17,9 @@ class DetailsViewController : UIViewController, DetailsViewInterface {
     @IBOutlet weak var price: UILabel!
     @IBOutlet weak var state: UILabel!
     @IBOutlet weak var mileage: UILabel!
+    @IBOutlet weak var year: UILabel!
+    @IBOutlet weak var owners: UILabel!
+    @IBOutlet weak var descr: UILabel!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -26,8 +29,11 @@ class DetailsViewController : UIViewController, DetailsViewInterface {
     func showDisplayData(_ item: DetailsItem) {
         carTitle.text = item.title
         carImage.image = UIImage(named: (item.img))
+        price.text = item.price
         state.text = item.state
-        mileage.text = String(item.mileage) + "km"
-        price.text = "$" + String(item.price)
+        mileage.text = item.mileage
+        year.text = item.year
+        owners.text = item.owners
+        descr.text = item.descr
     }
 }

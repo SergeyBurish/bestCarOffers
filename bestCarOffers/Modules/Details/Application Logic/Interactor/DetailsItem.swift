@@ -11,6 +11,9 @@ struct DetailsItem {
     let img : String
     let title : String
     let state : String
-    let price : Int
-    let mileage: Int
+    let price : String
+    let mileage: String
+    let year: String
+    let owners: String
+    let descr: String
 }

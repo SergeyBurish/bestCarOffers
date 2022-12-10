@@ -14,4 +14,7 @@ struct CarItem: Decodable {
     let state: String
     let price: Int
     let mileage: Int
+    let year: Int
+    let owners: Int
+    let descr: String
 }

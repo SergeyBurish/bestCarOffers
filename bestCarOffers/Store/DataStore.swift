@@ -15,7 +15,10 @@ let mockJSON = """
     "makeModel": "Audi A8",
     "state": "used",
     "price": 13500,
-    "mileage": 172000
+    "mileage": 172000,
+    "year": 2005,
+    "owners": 3,
+    "descr": "good state",
 
 },
 {
@@ -24,7 +27,10 @@ let mockJSON = """
     "makeModel": "BMW M2",
     "state": "used",
     "price": 40000,
-    "mileage": 540
+    "mileage": 540,
+    "year": 2017,
+    "owners": 1,
+    "descr": "small crack on windshield",
 },
 {
     "imgPrev": "FordCMaxprev",
@@ -32,7 +38,10 @@ let mockJSON = """
     "makeModel": "Ford C-Max",
     "state": "new",
     "price": 17000,
-    "mileage": 0
+    "mileage": 0,
+    "year": 2022,
+    "owners": 0,
+    "descr": "",
 }]
 """
 

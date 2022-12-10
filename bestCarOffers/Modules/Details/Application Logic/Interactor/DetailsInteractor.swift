@@ -22,8 +22,11 @@ class DetailsInteractor : DetailsInteractorInput {
                 let detailsItem = DetailsItem(img: carItem.carImage,
                                               title: carItem.makeModel,
                                               state: carItem.state,
-                                              price: carItem.price,
-                                              mileage: carItem.mileage)
+                                              price: "$" + String(carItem.price),
+                                              mileage: String(carItem.mileage) + "km",
+                                              year: String(carItem.year) + " year",
+                                              owners: "Number of owners: " + String(carItem.owners),
+                                              descr: carItem.descr)
                 self.output?.foundDetailsItem(detailsItem)
         })
     }
