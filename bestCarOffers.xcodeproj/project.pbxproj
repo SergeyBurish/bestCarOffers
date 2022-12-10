@@ -37,6 +37,7 @@
 		84204CA0294387A500292C52 /* DetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84204C9F294387A500292C52 /* DetailsInteractor.swift */; };
 		84204CA62943892800292C52 /* DetailsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84204CA52943892800292C52 /* DetailsDataManager.swift */; };
 		84204CAC2944674200292C52 /* DetailsModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84204CAB2944674200292C52 /* DetailsModuleInterface.swift */; };
+		84204CBA2944A24000292C52 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84204CB92944A24000292C52 /* ListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		84204C9F294387A500292C52 /* DetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsInteractor.swift; sourceTree = "<group>"; };
 		84204CA52943892800292C52 /* DetailsDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsDataManager.swift; sourceTree = "<group>"; };
 		84204CAB2944674200292C52 /* DetailsModuleInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsModuleInterface.swift; sourceTree = "<group>"; };
+		84204CB92944A24000292C52 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +262,7 @@
 			children = (
 				84204C3C2941EF7D00292C52 /* ListViewController.swift */,
 				84204C3D2941EF7D00292C52 /* ListViewInterface.swift */,
+				84204CB92944A24000292C52 /* ListCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -505,6 +508,7 @@
 				84204C232941EEE900292C52 /* ListDataManager.swift in Sources */,
 				84204C342941EF5E00292C52 /* UpcomingDisplayDataCollection.swift in Sources */,
 				84204C1C2941EECA00292C52 /* ListInteractorIO.swift in Sources */,
+				84204CBA2944A24000292C52 /* ListCell.swift in Sources */,
 				84204C1D2941EECA00292C52 /* UpcomingItem.swift in Sources */,
 				84204C502941EFFF00292C52 /* DataStore.swift in Sources */,
 				84204C9B2943840D00292C52 /* DetailsInteractorIO.swift in Sources */,

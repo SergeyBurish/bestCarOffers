@@ -21,6 +21,7 @@ class DetailsInteractor : DetailsInteractorInput {
             completion: { carItem in
                 let upcomingItem = UpcomingItem(img: "",
                                                 title: carItem.makeModel,
+                                                state: carItem.state,
                                                 price: carItem.price)
                 self.output?.foundUpcomingItem(upcomingItem)
         })

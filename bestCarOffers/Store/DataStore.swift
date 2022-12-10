@@ -12,16 +12,19 @@ let mockJSON = """
 [{
     "imgPrev": "AudiA8prev",
     "makeModel": "Audi A8",
+    "state": "used",
     "price": 13500
 },
 {
     "imgPrev": "BmwM2prev",
     "makeModel": "BMW M2",
+    "state": "used",
     "price": 40000
 },
 {
     "imgPrev": "FordCMaxprev",
     "makeModel": "Ford C-Max",
+    "state": "new",
     "price": 17000
 }]
 """

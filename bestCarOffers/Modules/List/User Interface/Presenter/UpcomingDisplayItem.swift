@@ -10,13 +10,15 @@ import Foundation
 struct UpcomingDisplayItem {
     let img : String
     let title : String
+    let subtitle : String
     let price : String
 }
 
 extension UpcomingDisplayItem : Equatable {
     static func == (a: UpcomingDisplayItem, b: UpcomingDisplayItem) -> Bool {
-        return a.img == b.title &&
-            a.img == b.title &&
+        return a.img == b.img &&
+            a.title == b.title &&
+            a.subtitle == b.subtitle &&
             a.price == b.price
     }
 }

@@ -58,13 +58,14 @@ class ListViewController : UITableViewController, ListViewInterface {
     }
         
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: ListEntryCellIdentifier, for: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: ListEntryCellIdentifier, for: indexPath) as! ListCell
 
         let item = dataProperty?.items[indexPath.row]
-
-        cell.textLabel?.text = item?.title
-        cell.detailTextLabel?.text = item?.price
-        cell.imageView?.image = UIImage(named: (item?.img)!)
+        
+        cell.cellImage.image = UIImage(named: (item?.img)!)
+        cell.title1.text = item?.title
+        cell.title2.text = item?.subtitle
+        cell.price.text = item?.price
         cell.selectionStyle = UITableViewCell.SelectionStyle.none;
 
         return cell

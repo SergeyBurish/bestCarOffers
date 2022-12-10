@@ -36,6 +36,7 @@ class ListInteractor : ListInteractorInput {
             return UpcomingItem(
                 img: carItem.imgPrev,
                 title: carItem.makeModel,
+                state: carItem.state,
                 price: carItem.price)
         }
         return upcomingItems
