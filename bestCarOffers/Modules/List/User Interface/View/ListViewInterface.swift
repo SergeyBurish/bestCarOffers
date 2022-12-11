@@ -8,7 +8,6 @@
 import Foundation
 
 protocol ListViewInterface {
-    func showNoContentMessage()
     func showUpcomingDisplayData(_ data: UpcomingDisplayData)
     func reloadEntries()
 }

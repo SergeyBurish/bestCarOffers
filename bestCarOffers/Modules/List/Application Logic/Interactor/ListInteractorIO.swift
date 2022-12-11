@@ -9,7 +9,7 @@ import Foundation
 
 
 protocol ListInteractorInput {
-    func findUpcomingItems()
+    func findUpcomingItems(filter: String)
     func handleSelected(index: Int)
 }
 

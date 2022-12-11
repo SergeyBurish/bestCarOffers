@@ -10,10 +10,9 @@ import Foundation
 class ListDataManager {
     var dataStore : DataStore?
 
-    func carItemsMatching(completion: (([CarItem]) -> Void)!) {
-                
+    func carItemsMatching(filter: String, completion: (([CarItem]) -> Void)!) {     
         dataStore?.fetchAllEntries(
-            completionBlock: { items in
+            filter: filter, completionBlock: { items in
                 completion(items)
         })
     }

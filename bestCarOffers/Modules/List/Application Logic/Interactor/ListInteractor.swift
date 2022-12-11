@@ -18,10 +18,10 @@ class ListInteractor : ListInteractorInput {
     
     // MARK: ListInteractorInput
     
-    func findUpcomingItems() {
+    func findUpcomingItems(filter: String) {
         
         dataManager.carItemsMatching(
-            completion: { carItems in
+            filter: filter, completion: { carItems in
                 let upcomingItems = self.upcomingItemsFromCarItems(carItems)
                 self.output?.foundUpcomingItems(upcomingItems)
         })

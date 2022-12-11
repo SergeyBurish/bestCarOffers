@@ -8,6 +8,6 @@
 import Foundation
 
 protocol ListModuleInterface {
-    func updateView()
+    func updateView(filter: String)
     func handleItemSelected(_ index: Int)
 }

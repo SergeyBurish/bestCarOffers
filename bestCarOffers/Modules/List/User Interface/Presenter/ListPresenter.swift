@@ -16,11 +16,7 @@ class ListPresenter : ListInteractorOutput, ListModuleInterface {
     // MARK: ListInteractorOutput
     
     func foundUpcomingItems(_ upcomingItems: [UpcomingItem]) {
-        if upcomingItems.count == 0 {
-            userInterface?.showNoContentMessage()
-        } else {
-            updateUserInterfaceWithUpcomingItems(upcomingItems)
-        }
+        updateUserInterfaceWithUpcomingItems(upcomingItems)
     }
     
     func updateUserInterfaceWithUpcomingItems(_ upcomingItems: [UpcomingItem]) {
@@ -36,8 +32,8 @@ class ListPresenter : ListInteractorOutput, ListModuleInterface {
     
     // MARK: ListModuleInterface
     
-    func updateView() {
-        listInteractor?.findUpcomingItems()
+    func updateView(filter: String) {
+        listInteractor?.findUpcomingItems(filter: filter)
     }
     
     func handleItemSelected(_ index: Int) {

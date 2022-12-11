@@ -77,9 +77,12 @@ class DataStore {
         carItems = try! JSONDecoder().decode([CarItem].self, from: jsonData)
     }
     
-    func fetchAllEntries(completionBlock: (([CarItem]) -> Void)!) {
+    func fetchAllEntries(filter: String, completionBlock: (([CarItem]) -> Void)!) {
+        let filtered = filter.isEmpty ? self.carItems : self.carItems.filter { carItem in
+            return carItem.makeModel.range(of: filter, options: .caseInsensitive) != nil
+        }
         // async request
-        completionBlock(self.carItems)
+        completionBlock(filtered)
     }
     
     func fetchSelectedEntry(completionBlock: ((CarItem) -> Void)!) {
