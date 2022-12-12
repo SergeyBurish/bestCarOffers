@@ -15,18 +15,15 @@ class ListPresenter : ListInteractorOutput, ListModuleInterface {
     
     // MARK: ListInteractorOutput
     
-    func foundUpcomingItems(_ upcomingItems: [UpcomingItem]) {
-        updateUserInterfaceWithUpcomingItems(upcomingItems)
-    }
-    
-    func updateUserInterfaceWithUpcomingItems(_ upcomingItems: [UpcomingItem]) {
-        let upcomingDisplayData = upcomingDisplayDataWithItems(upcomingItems)
+    func foundUpcomingItems(_ upcomingItems: [UpcomingItem], filter: String) {
+        let upcomingDisplayData = upcomingDisplayDataWithItems(upcomingItems, filter: filter)
         userInterface?.showUpcomingDisplayData(upcomingDisplayData)
     }
     
-    func upcomingDisplayDataWithItems(_ upcomingItems: [UpcomingItem]) -> UpcomingDisplayData {
+    func upcomingDisplayDataWithItems(_ upcomingItems: [UpcomingItem], filter: String) -> UpcomingDisplayData {
         let collection = UpcomingDisplayDataCollection()
         collection.addUpcomingItems(upcomingItems)
+        collection.filter = filter
         return collection.collectedDisplayData()
     }
     

@@ -15,6 +15,7 @@ class ListViewController : UITableViewController, UITextFieldDelegate, ListViewI
     var eventHandler : ListModuleInterface?
     var dataProperty : UpcomingDisplayData?
     var strongTableView : UITableView?
+    var filterStr: String = ""
     
     @IBOutlet var noContentView : UIView!
     
@@ -28,7 +29,7 @@ class ListViewController : UITableViewController, UITextFieldDelegate, ListViewI
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        eventHandler?.updateView(filter: "")
+        eventHandler?.updateView(filter: filterStr)
     }
     
     func configureView() {
@@ -42,6 +43,8 @@ class ListViewController : UITableViewController, UITextFieldDelegate, ListViewI
         
         dataProperty = data
         reloadEntries()
+        
+        filterStr = data.filter
     }
     
     func reloadEntries() {
@@ -68,6 +71,8 @@ class ListViewController : UITableViewController, UITextFieldDelegate, ListViewI
         edit.placeholder = "Enter text to filter"
         edit.delegate = self
         edit.backgroundColor = .white
+        
+        edit.text = filterStr
 
         headerView.addSubview(edit)
         

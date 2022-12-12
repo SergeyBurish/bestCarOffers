@@ -9,6 +9,7 @@ import Foundation
 
 class UpcomingDisplayDataCollection {
     var items: [UpcomingDisplayItem] = []
+    var filter: String = ""
         
     func addUpcomingItems(_ upcomingItems: [UpcomingItem]) {
         for upcomingItem in upcomingItems {
@@ -26,6 +27,6 @@ class UpcomingDisplayDataCollection {
     }
     
     func collectedDisplayData() -> UpcomingDisplayData {
-        return UpcomingDisplayData(items: items)
+        return UpcomingDisplayData(items: items, filter: filter)
     }
 }

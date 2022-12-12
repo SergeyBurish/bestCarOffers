@@ -70,6 +70,8 @@ let mockJSON = """
 
 class DataStore {
     var carItems: [CarItem] = []
+    var filtered: [CarItem] = []
+    var filter: String = ""
     var selectedIndex = -1
     
     init() {
@@ -77,18 +79,19 @@ class DataStore {
         carItems = try! JSONDecoder().decode([CarItem].self, from: jsonData)
     }
     
-    func fetchAllEntries(filter: String, completionBlock: (([CarItem]) -> Void)!) {
-        let filtered = filter.isEmpty ? self.carItems : self.carItems.filter { carItem in
+    func fetchAllEntries(filter: String, completionBlock: (([CarItem], String) -> Void)!) {
+        self.filter = filter
+        self.filtered = filter.isEmpty ? self.carItems : self.carItems.filter { carItem in
             return carItem.makeModel.range(of: filter, options: .caseInsensitive) != nil
         }
         // async request
-        completionBlock(filtered)
+        completionBlock(filtered, self.filter)
     }
     
     func fetchSelectedEntry(completionBlock: ((CarItem) -> Void)!) {
         if (selectedIndex < 0) {return}
         
         // async request
-        completionBlock(self.carItems[selectedIndex])
+        completionBlock(self.filtered[selectedIndex])
     }
 }

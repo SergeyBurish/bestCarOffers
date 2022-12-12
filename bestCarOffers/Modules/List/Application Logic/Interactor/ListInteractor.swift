@@ -21,9 +21,9 @@ class ListInteractor : ListInteractorInput {
     func findUpcomingItems(filter: String) {
         
         dataManager.carItemsMatching(
-            filter: filter, completion: { carItems in
+            filter: filter, completion: { (carItems, filterStr) in
                 let upcomingItems = self.upcomingItemsFromCarItems(carItems)
-                self.output?.foundUpcomingItems(upcomingItems)
+                self.output?.foundUpcomingItems(upcomingItems, filter: filterStr)
         })
     }
     

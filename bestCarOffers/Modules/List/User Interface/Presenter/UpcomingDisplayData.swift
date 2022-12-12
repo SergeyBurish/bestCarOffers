@@ -9,10 +9,5 @@ import Foundation
 
 struct UpcomingDisplayData {
     let items: [UpcomingDisplayItem]
-}
-
-extension UpcomingDisplayData : Equatable {
-    static func == (a: UpcomingDisplayData, b: UpcomingDisplayData) -> Bool {
-        return a.items == b.items
-    }
+    let filter: String
 }
