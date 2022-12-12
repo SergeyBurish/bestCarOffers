@@ -39,6 +39,13 @@
 		84204CAC2944674200292C52 /* DetailsModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84204CAB2944674200292C52 /* DetailsModuleInterface.swift */; };
 		84204CBA2944A24000292C52 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84204CB92944A24000292C52 /* ListCell.swift */; };
 		84204CBF2944B1D400292C52 /* DetailsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84204CBE2944B1D400292C52 /* DetailsItem.swift */; };
+		84204CC9294768E700292C52 /* ListDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84204C222941EEE900292C52 /* ListDataManager.swift */; };
+		84204CCD294769AB00292C52 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84204C4F2941EFFF00292C52 /* DataStore.swift */; };
+		84204CD1294769CF00292C52 /* CarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84204C0D2941EE0700292C52 /* CarItem.swift */; };
+		84204CD529476AD000292C52 /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84204C1B2941EECA00292C52 /* ListInteractor.swift */; };
+		84204CD929476B0000292C52 /* ListInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84204C192941EEC900292C52 /* ListInteractorIO.swift */; };
+		84204CDD29476B1700292C52 /* UpcomingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84204C1A2941EECA00292C52 /* UpcomingItem.swift */; };
+		84204CE329476D9B00292C52 /* TestListInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84204CE229476D9B00292C52 /* TestListInteractorOutput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +104,7 @@
 		84204CAB2944674200292C52 /* DetailsModuleInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsModuleInterface.swift; sourceTree = "<group>"; };
 		84204CB92944A24000292C52 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		84204CBE2944B1D400292C52 /* DetailsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsItem.swift; sourceTree = "<group>"; };
+		84204CE229476D9B00292C52 /* TestListInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestListInteractorOutput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +181,7 @@
 		84204BE62941E6B400292C52 /* bestCarOffersUITests */ = {
 			isa = PBXGroup;
 			children = (
+				84204CE129476D4200292C52 /* TestClasses */,
 				84204BE72941E6B400292C52 /* bestCarOffersUITests.swift */,
 				84204BE92941E6B400292C52 /* Info.plist */,
 			);
@@ -376,6 +385,14 @@
 			path = "Module Interface";
 			sourceTree = "<group>";
 		};
+		84204CE129476D4200292C52 /* TestClasses */ = {
+			isa = PBXGroup;
+			children = (
+				84204CE229476D9B00292C52 /* TestListInteractorOutput.swift */,
+			);
+			path = TestClasses;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -548,7 +565,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84204CD529476AD000292C52 /* ListInteractor.swift in Sources */,
+				84204CE329476D9B00292C52 /* TestListInteractorOutput.swift in Sources */,
 				84204BE82941E6B400292C52 /* bestCarOffersUITests.swift in Sources */,
+				84204CDD29476B1700292C52 /* UpcomingItem.swift in Sources */,
+				84204CD1294769CF00292C52 /* CarItem.swift in Sources */,
+				84204CCD294769AB00292C52 /* DataStore.swift in Sources */,
+				84204CD929476B0000292C52 /* ListInteractorIO.swift in Sources */,
+				84204CC9294768E700292C52 /* ListDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
